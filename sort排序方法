@@ -1,0 +1,10 @@
+   _lstDatas.Sort((x, y) =>
+        {
+            if (x.mCardRank.CompareTo(y.mCardRank) != 0)
+                return -(x.mCardRank.CompareTo(y.mCardRank));
+            else if (x.mCardLevel.CompareTo(y.mCardLevel) != 0)
+                return -(x.mCardLevel.CompareTo(y.mCardLevel));
+            else if (x.mCardCfgId.CompareTo(y.mCardCfgId) != 0)
+                return -(x.mCardCfgId.CompareTo(y.mCardCfgId));
+            return 1;
+        });
